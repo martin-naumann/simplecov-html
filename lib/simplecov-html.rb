@@ -49,7 +49,8 @@ class SimpleCov::Formatter::HTMLFormatter
 
   # Returns the html for the given source_file
   def formatted_source_file(source_file)
-    template('source_file').result(binding)
+      # Here be dragons!
+      #    template('source_file').result(binding)
   end
 
   # Returns a table containing the given source files
